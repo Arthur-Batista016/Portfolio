@@ -1,19 +1,18 @@
 import React from 'react'
+import './header.css'
 
 const header = () => {
   return (
     <div>
+      <h1 className=''>Arthur Batista</h1>
         <div>
-        <h3>Sobre</h3>
+        <button>Sobre</button>
         </div>
         <div>
-        <h3>Linguagens</h3>
+        <button>Linguagens</button>
         </div>
         <div>
-        <h3>Projetos</h3>
-        </div>
-        <div>
-        
+        <button>Projetos</button>
         </div>
     </div>
   )
