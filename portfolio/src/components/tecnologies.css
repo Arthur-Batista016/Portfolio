@@ -1,0 +1,27 @@
+body{
+
+}
+
+#tec-title{
+    text-align: start;
+}
+
+
+#top-langs-img{
+    display: flex;
+   justify-content: center;
+}
+
+#top-langs-img img {
+    height: 200px;
+    max-height: 250px;
+    min-height: 60px;
+
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* HOVER CERTO */
+#top-langs-img img:hover {
+    transform: scale(1.15) translateY(-5px);
+}
