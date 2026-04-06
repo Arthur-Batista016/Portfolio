@@ -4,11 +4,11 @@ import './tecnologies.css'
 const tecnologies = () => {
   return (
     <div>
-        <h1 id="tec-title">TECNOLOGIAS</h1>
+        <h1 id="tec-title"><b>TECNOLOGIAS</b></h1>
 
         <div>
             <div>
-            <h1>MINHAS ESPECIALIDADES</h1>
+            <h1 id='top-langs'><b>MINHAS ESPECIALIDADES</b></h1>
             
             <div id='top-langs-img'>
               <img id='java' src="/Java-Icon.png" alt="" />
@@ -18,11 +18,14 @@ const tecnologies = () => {
             </div>
 
             <div>
-                <h1>OUTROS CONHECIMENTOS</h1>
+                <h1 id='other-langs'><b>OUTROS CONHECIMENTOS</b></h1>
+
                 <div id='other-langs-img'>
-                  <img id='PBI' src="" alt="" />
-                  <img id='dot-Net' src="" alt="" />
-                  <img id='typeScript' src="" alt="" />
+                   <img id='python' src="python.png" alt="" />
+                  <img id='csharp' src="csharp.png" alt="" />
+                  <img id='pbi' src="pbi.png" alt="" />
+                  <img id='linux' src="linux.png" alt="" />
+                  <img src="ts.png" alt="" />
                 </div>
             </div>
         </div>

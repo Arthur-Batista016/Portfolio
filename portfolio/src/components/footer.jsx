@@ -10,6 +10,9 @@ const footer = () => {
             </div>
             <div>
                 <h3>Telefone: 11940829316</h3>
+                <h3>E-mail: arthurbatista1800@gmail.com</h3>
+                <img src="linkedin.webp" alt="" />
+                <img src="git.webp" alt="" />
             </div>
             <div>
                 
