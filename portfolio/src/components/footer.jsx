@@ -1,24 +1,41 @@
 import React from 'react'
 
+import "./footer.css"
+
 const footer = () => {
   return (
-    
-    <div>
-        <div>
-            <div>
-                <h2>Informações de Contato:</h2>
-            </div>
-            <div>
-                <h3>Telefone: 11940829316</h3>
-                <h3>E-mail: arthurbatista1800@gmail.com</h3>
-                <img src="linkedin.webp" alt="" />
-                <img src="git.webp" alt="" />
-            </div>
-            <div>
-                
-            </div>
+    <header className="bg-dark text-white footer-details">
+      <div className="container">
+
+        <div className="d-flex flex-wrap justify-content-center align-items-center py-4">
+
+       
+          {/* Centro (logo estilizado) */}
+          <div className="d-flex justify-content-center">
+             <img className='logo' src="/mylogo.png" alt="" />
+          </div>
+
+          {/* Direita (menu) */}
+          <ul className="nav itens">
+            <li className="nav-item item-btn">
+              <a href="#" className="nav-link px-2 text-secondary">Sobre Mim</a>
+            </li>
+            <li className="nav-item item-btn">
+              <a href="#" className="nav-link px-2 text-secondary">Tecnologias</a>
+            </li>
+            <li className="nav-item item-btn">
+              <a href="#" className="nav-link px-2 text-secondary">Projetos</a>
+            </li>
+            <li className="nav-item item-btn">
+              <a href="#" className="nav-link px-2 text-secondary">Formação Academica</a>
+            </li>
+          </ul>
+
         </div>
-    </div>
+
+      </div>
+    </header>
+
   )
 }
 
