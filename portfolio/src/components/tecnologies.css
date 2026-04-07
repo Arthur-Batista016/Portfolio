@@ -1,5 +1,5 @@
 body{
-
+    color:white
 }
 
 #tec-title{
@@ -11,10 +11,13 @@ body{
 
 #top-langs{
     font-size: x-large;
+    text-align: center;
+
 }
 
 #other-langs{
     font-size: x-large;
+    text-align: center;
 }
 
 
@@ -39,6 +42,11 @@ body{
 }
 
 
+#other-langs-img{
+    display: flex;
+   justify-content: center;
+
+}
 
 #other-langs-img img{
     height: 120px;

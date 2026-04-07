@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#itens-academic{
+    justify-content: end;
+
+}
+
+#first-logo{
+    height: 100px !important;
+    width: auto;
+}
+
+#second-logo{
+    height: 65px;
+    margin-top: 33px;
+    width: auto;
+}

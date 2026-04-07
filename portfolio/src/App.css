@@ -4,8 +4,9 @@
 }
 
 body{
- background: #132691;
-background: linear-gradient(90deg, rgba(19, 38, 145, 1) 0%, rgba(11, 5, 33, 1) 100%, rgba(10, 3, 3, 1) 100%, rgba(34, 30, 82, 1) 100%);
+ 
+  background: #152331; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #152331); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #000000, #152331); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 

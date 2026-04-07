@@ -1,13 +1,12 @@
 import React from 'react'
-
 import "./footer.css"
 
 const footer = () => {
   return (
-    <header className="bg-dark text-white footer-details">
+    <header className="text-white footer-details background-header">
       <div className="container">
 
-        <div className="d-flex flex-wrap justify-content-center align-items-center py-4">
+        <div className="d-flex flex-wrap justify-content-center align-items-center py-0">
 
        
           {/* Centro (logo estilizado) */}

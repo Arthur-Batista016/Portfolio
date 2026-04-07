@@ -3,16 +3,17 @@
     padding: 0;
 }
 
-.footer-details{
-    padding-bottom: -10%;
+.background-header {
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.background-header:hover {
+    background-color: #212529;
+    color: white;
 }
 
 
-
-
-.copyright{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .logo{
     height: 150px;
