@@ -3,11 +3,18 @@
     padding: 0;
 }
 
+#background-academic{
+    margin-top: 2%;
+    background-color: transparent;
+    transition: 0.4s;
+}
 
-
+#background-academic:hover{
+    background-color:  #212529;
+}
 
 #itens-academic{
-    justify-content: end;
+    margin-left: 10%;
 
 }
 

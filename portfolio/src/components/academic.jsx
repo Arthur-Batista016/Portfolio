@@ -2,10 +2,10 @@ import React from 'react'
 import "./academic.css"
 const academic = () => {
   return (
-     <div class="container px-4 py-5" id="featured-3">
+     <div class="container px-4 py-5" id='background-academic'>
         <h2 class="pb-2 border-bottom academic-text">Formação Acadêmica</h2>
         <div class="row g-4 py-5  row-cols-lg-3">
-          <div class="first-course">
+          <div class="first-course" id='itens-academic'>
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3"
             >
@@ -17,12 +17,10 @@ const academic = () => {
               no qual adquiri conhecimentos em lógica de programação, algoritmos,
                redes de computadores e boas práticas de desenvolvimento de software, 
                além de experiência com linguagens como Java, Python e C# (.NET).
-               
-
-
             </p>
           </div>
-          <div class="feature col">
+          
+          <div class="feature col" id='itens-academic'>
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3"
             >

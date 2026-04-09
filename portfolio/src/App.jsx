@@ -8,7 +8,9 @@ import Academic from './components/academic'
 
 
 import Header from './components/header'
+import Intro from './components/Intro'
 import Tecnologies from './components/tecnologies'
+import Projects from './components/projects'
 import Footer from './components/footer'
 
 function App() {
@@ -16,9 +18,13 @@ function App() {
 
   return (
     <>
+    
     <Footer/>
+    <Intro/>
     <Tecnologies/>
     <Academic/>
+    <Projects/>
+    
 
      
     </>

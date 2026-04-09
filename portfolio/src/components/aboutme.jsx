@@ -2,12 +2,7 @@ import React from 'react'
 
 const aboutme = () => {
   return (
-    <div>
-        <div id='text'>
-            
-
-        </div>
-    </div>
+  <div></div>
   )
 }
 

@@ -6,6 +6,7 @@
 .background-header {
     background-color: transparent;
     transition: 0.4s;
+    
 }
 
 .background-header:hover {
