@@ -1,32 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState, useEffect } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Academic from './components/academic'
 
-
-import Header from './components/header'
 import Intro from './components/Intro'
 import Tecnologies from './components/tecnologies'
-import Projects from './components/projects'
 import Footer from './components/footer'
+import Projects from './components/projects'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+  const handleWheel = (e) => {
+    const intro = document.getElementById("intro");
+    if (!intro) return;
+
+    const limite = intro.offsetHeight;
+
+    if (window.scrollY + e.deltaY >= limite) {
+      e.preventDefault();
+      window.scrollTo(0, limite);
+    }
+  };
+
+  window.addEventListener("wheel", handleWheel, { passive: false });
+
+  return () => {
+    window.removeEventListener("wheel", handleWheel);
+  };
+}, []);
 
   return (
     <>
-    
-    <Footer/>
-    <Intro/>
-    <Tecnologies/>
-    <Academic/>
-    <Projects/>
-    
 
-     
+      <Footer/>
+
+      <section id="intro">
+        <Intro />
+      </section>
+
+      <section id="tec">
+        <Tecnologies />
+      </section>
+
+      <section>
+        <Projects/>
+      </section>
+
+      
+      
     </>
   )
 }

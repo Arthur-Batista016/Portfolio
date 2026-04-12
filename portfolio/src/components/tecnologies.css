@@ -6,6 +6,7 @@ body{
     text-align: center;
     font-size: xx-large;
     margin-bottom: 6%;
+    margin-top: 3%;
     
 }
 
@@ -45,7 +46,7 @@ body{
 #other-langs-img{
     display: flex;
    justify-content: center;
-
+   margin-bottom: 7%;
 }
 
 #other-langs-img img{
@@ -62,3 +63,22 @@ body{
 }
 
 
+
+#next-tec{
+    transition: 0.4s;
+    background-color: transparent;
+    opacity: 15%;
+}
+
+#next-tec img{
+    height: 100px;
+   display: block;
+    margin: 0 auto;
+    opacity: 60%;
+    background-color: transparent;
+    background-size: cover;
+}
+
+#next-tec:hover{
+   background-color: gray;
+}

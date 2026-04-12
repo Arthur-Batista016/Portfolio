@@ -20,7 +20,7 @@ const footer = () => {
               <a href="#" className="nav-link px-2 text-secondary">Sobre Mim</a>
             </li>
             <li className="nav-item item-btn">
-              <a href="#" className="nav-link px-2 text-secondary">Tecnologias</a>
+              <a href="#tec" className="nav-link px-2 text-secondary">Tecnologias</a>
             </li>
             <li className="nav-item item-btn">
               <a href="#" className="nav-link px-2 text-secondary">Projetos</a>
