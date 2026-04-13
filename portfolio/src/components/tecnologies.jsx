@@ -3,7 +3,7 @@ import './tecnologies.css'
 
 const tecnologies = () => {
   return (
-    <div>
+    <div id='tec'>
         <h1 id="tec-title" pb-2 border-bottom><b>TECNOLOGIAS</b></h1>
 
         <div>
@@ -31,7 +31,7 @@ const tecnologies = () => {
         </div>
 
         <div id='next-tec'>
-          <a href="#">
+          <a href="#proj">
           <img  src="down-arrow.png" alt="" />
           </a>
     </div>

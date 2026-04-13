@@ -1,6 +1,9 @@
 import React from 'react'
 import './intro.css'
-const Intro = () => {
+const Intro = ({ liberarScroll }) => { 
+
+
+
   return (
   <div>
   <div className="overflow-hidden p-3 p-md-5" id="body-intro">
@@ -28,7 +31,7 @@ const Intro = () => {
 </div>
 
     <div id='next-intro'>
-      <a href="#tec">
+      <a href="#tec" onClick={liberarScroll}>
       <img  src="down-arrow.png" alt="" />
       </a>
     </div>
