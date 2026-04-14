@@ -1,14 +1,20 @@
 import React from 'react'
 import './intro.css'
+
 const Intro = ({ liberarScroll }) => { 
-
-
+  
+  const scrollToSection = (id) => {
+  document.getElementById(id).scrollIntoView({
+    behavior: "smooth"
+  });
+};
 
   return (
+    
   <div>
   <div className="overflow-hidden p-3 p-md-5" id="body-intro">
   
-  <div className="container">
+  <div className="container reveal">
     <div className="row align-items-center">
       
       <div className="col-md-6 p-lg-5">
@@ -30,8 +36,8 @@ const Intro = ({ liberarScroll }) => {
        
 </div>
 
-    <div id='next-intro'>
-      <a href="#tec" onClick={liberarScroll}>
+    <div id='next-intro' className='reveal'>
+      <a href="#tec">
       <img  src="down-arrow.png" alt="" />
       </a>
     </div>

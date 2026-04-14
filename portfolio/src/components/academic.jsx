@@ -2,6 +2,7 @@ import React from 'react'
 import "./academic.css"
 const academic = () => {
   return (
+    <div>
      <div class="container px-4 py-5" id='background-academic'>
         <h2 class="pb-2 border-bottom academic-text">Formação Acadêmica</h2>
         <div class="row g-4 py-5  row-cols-lg-3">
@@ -37,6 +38,13 @@ const academic = () => {
           <div class="feature col">
           </div>
         </div>
+      </div>
+      
+    <div id='next-intro'>
+      <a href="#intro">
+      <img  src="down-arrow.png" alt="" />
+      </a>
+    </div>
       </div>
   )
 }

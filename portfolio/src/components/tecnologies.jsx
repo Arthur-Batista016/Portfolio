@@ -4,13 +4,13 @@ import './tecnologies.css'
 const tecnologies = () => {
   return (
     <div id='tec'>
-        <h1 id="tec-title" pb-2 border-bottom><b>TECNOLOGIAS</b></h1>
+         <h2 class="pb-2 border-bottom academic-text reveal" id='tec-title'>Tecnologias</h2>
 
         <div>
             <div>
-            <h1 id='top-langs'><b>MINHAS ESPECIALIDADES</b></h1>
+            <h1 id='top-langs' className='reveal'><b>MINHAS ESPECIALIDADES</b></h1>
             
-            <div id='top-langs-img'>
+            <div id='top-langs-img' className='reveal'>
               <img id='java' src="/Java-Icon.png" alt="" />
               <img id='react' src="/react-icon.png" alt="" />
               <img id='Sql' src="/sql.png" alt="" />
@@ -18,9 +18,9 @@ const tecnologies = () => {
             </div>
 
             <div>
-                <h1 id='other-langs'><b>OUTROS CONHECIMENTOS</b></h1>
+                <h1 id='other-langs' className='reveal'><b>OUTROS CONHECIMENTOS</b></h1>
 
-                <div id='other-langs-img'>
+                <div id='other-langs-img' className='reveal'>
                    <img id='python' src="python.png" alt="" />
                   <img id='csharp' src="csharp.png" alt="" />
                   <img id='pbi' src="pbi.png" alt="" />
@@ -30,7 +30,7 @@ const tecnologies = () => {
             </div>
         </div>
 
-        <div id='next-tec'>
+        <div id='next-tec' className='reveal'>
           <a href="#proj">
           <img  src="down-arrow.png" alt="" />
           </a>
