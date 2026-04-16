@@ -3,41 +3,34 @@ import "./footer.css"
 
 const footer = () => {
   return (
-    <header className="text-white footer-details background-header" id='header'>
-      <div className="container">
+    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
+      <div className="col-md-4 d-flex align-items-center"> 
+        <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
+          <svg className="bi" width="30" height="24" aria-hidden="true">
+            <use xlinkHref="#bootstrap"></use>
+          </svg> 
+        </a> 
+        <span className="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> 
+      </div> 
 
-        <div className="d-flex flex-wrap justify-content-center align-items-center py-0">
+      <ul className="nav col-md-4 justify-content-end list-unstyled d-flex"> 
+        <li className="ms-3">
+          <a className="text-body-secondary" href="#" aria-label="Instagram">
+            <svg className="bi" width="24" height="24" aria-hidden="true">
+              <use xlinkHref="#instagram"></use>
+            </svg>
+          </a>
+        </li> 
 
-       
-          {/* Centro (logo estilizado) */}
-          <div className="d-flex justify-content-center">
-             <img className='logo' src="/mylogo.png" alt="" />
-          </div>
-
-          {/* Direita (menu) */}
-          <ul className="nav itens">
-             <li className="nav-item item-btn">
-              <a href="#intro" className="nav-link px-2 text-secondary">Início</a>
-            </li>
-            <li className="nav-item item-btn">
-              <a href="#" className="nav-link px-2 text-secondary">Sobre Mim</a>
-            </li>
-            <li className="nav-item item-btn">
-              <a href="#tec" className="nav-link px-2 text-secondary">Tecnologias</a>
-            </li>
-            <li className="nav-item item-btn">
-              <a href="#proj" className="nav-link px-2 text-secondary">Projetos</a>
-            </li>
-            <li className="nav-item item-btn">
-              <a href="#" className="nav-link px-2 text-secondary">Formação Academica</a>
-            </li>
-          </ul>
-
-        </div>
-
-      </div>
-    </header>
-
+        <li className="ms-3">
+          <a className="text-body-secondary" href="#" aria-label="Facebook">
+            <svg className="bi" width="24" height="24">
+              <use xlinkHref="#facebook"></use>
+            </svg>
+          </a>
+        </li> 
+      </ul> 
+    </footer>
   )
 }
 

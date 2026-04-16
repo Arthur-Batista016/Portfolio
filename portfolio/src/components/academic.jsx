@@ -40,8 +40,8 @@ const academic = () => {
         </div>
       </div>
       
-    <div id='next-intro'>
-      <a href="#intro">
+    <div id='next-project'>
+      <a href="#proj">
       <img  src="down-arrow.png" alt="" />
       </a>
     </div>

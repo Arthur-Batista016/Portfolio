@@ -28,3 +28,26 @@
     margin-top: 33px;
     width: auto;
 }
+
+
+
+#next-project{
+    margin-top: 6%;
+    transition: 0.4s;
+    background-color: transparent;
+    opacity: 15%;
+    margin-bottom: 0;
+}
+
+#next-project img{
+    height: 100px;
+   display: block;
+    margin: 0 auto;
+    opacity: 60%;
+    background-color: transparent;
+    background-size: cover;
+}
+
+#next-project:hover{
+   background-color: gray;
+}

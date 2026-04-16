@@ -4,9 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Intro from './components/Intro'
 import Tecnologies from './components/tecnologies'
-import Footer from './components/footer'
 import Projects from './components/projects'
 import Academic from './components/academic'
+import Header from './components/header';
+import Footer from './components/footer'
 
 
 function App() {
@@ -132,14 +133,13 @@ useEffect(() => {
   return (
     <>
      
+       <Header/>
 
       <section id="intro">
-         <Footer/>
         <Intro liberarScroll={() => (liberarScroll.current = true)} />
       </section>
 
       <section id="tec">
-        <Footer/>
         <Tecnologies />
       </section>
 
@@ -150,7 +150,14 @@ useEffect(() => {
        <section id="proj">
         <Projects />
       </section>
+
+        <section id="contacts">
+         
+      </section>
        
+       <Footer/>
+
+
   
        
 

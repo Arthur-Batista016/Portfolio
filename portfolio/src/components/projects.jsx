@@ -68,7 +68,7 @@ const projects = () => {
                 height="225" 
                 style={{ objectFit: "cover" }} 
               />
-              <div class="card-body">
+              <div class="card-body" id='mb'>
                 <h4>MAJOR BEAT</h4>
                 <p class="card-text">“My Final Project (TCC), Major Beat, is an app designed to help musicians find
                    new career opportunities and grow in the music industry.”</p>
