@@ -42,7 +42,6 @@ body{
     margin-bottom: 2%;
 }
 
-/* HOVER CERTO */
 #top-langs-img img:hover {
     transform: scale(1.15) translateY(-5px);
 }

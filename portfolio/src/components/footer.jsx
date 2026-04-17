@@ -1,37 +1,28 @@
 import React from 'react'
 import "./footer.css"
 
-const footer = () => {
+const Footer = () => {
   return (
-    <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"> 
-      <div className="col-md-4 d-flex align-items-center"> 
-        <a href="/" className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap"> 
-          <svg className="bi" width="30" height="24" aria-hidden="true">
-            <use xlinkHref="#bootstrap"></use>
-          </svg> 
-        </a> 
-        <span className="mb-3 mb-md-0 text-body-secondary">© 2025 Company, Inc</span> 
-      </div> 
+    <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
+      
+      <div className="d-flex align-items-center">
+        <img src="/mylogo.png" alt="" id='footer-logo' />
+      </div>
 
-      <ul className="nav col-md-4 justify-content-end list-unstyled d-flex"> 
-        <li className="ms-3">
-          <a className="text-body-secondary" href="#" aria-label="Instagram">
-            <svg className="bi" width="24" height="24" aria-hidden="true">
-              <use xlinkHref="#instagram"></use>
-            </svg>
-          </a>
-        </li> 
+      <div id='social-medias'>
+        <ul className="nav justify-content-end list-unstyled d-flex">
+          <li className="ms-3">
+            <img src="/gitlogo.webp" alt="" />
+          </li>
 
-        <li className="ms-3">
-          <a className="text-body-secondary" href="#" aria-label="Facebook">
-            <svg className="bi" width="24" height="24">
-              <use xlinkHref="#facebook"></use>
-            </svg>
-          </a>
-        </li> 
-      </ul> 
+          <li className="ms-3">
+            <img src="/linkedas.webp" alt="" />
+          </li>
+        </ul>
+      </div>
+
     </footer>
   )
 }
 
-export default footer
+export default Footer

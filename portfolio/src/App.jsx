@@ -149,13 +149,11 @@ useEffect(() => {
 
        <section id="proj">
         <Projects />
+        <Footer/>
       </section>
 
-        <section id="contacts">
-         
-      </section>
        
-       <Footer/>
+       
 
 
   
