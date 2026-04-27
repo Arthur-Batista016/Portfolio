@@ -3,21 +3,20 @@ body{
 }
 
 
-#tec{
-    
-}
 
 #tec-title{
     text-align: center;
     font-size: xx-large;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
     margin-top: 3%;
-    
+  
 }
+
 
 #top-langs{
     font-size: x-large;
     text-align: center;
+    margin-top: 3%;
 
 }
 
@@ -85,4 +84,9 @@ body{
 
 #next-tec:hover{
    background-color: gray;
+}
+
+
+.line2{
+    margin-bottom: 100px;
 }

@@ -4,7 +4,8 @@ import './tecnologies.css'
 const tecnologies = () => {
   return (
     <div id='tec'>
-         <h2 class="pb-2 border-bottom academic-text reveal" id='tec-title'>Tecnologias</h2>
+         <h2 class="pb-2 academic-text reveal" id='tec-title'>Tecnologias</h2>
+         <h2 className='border-bottom'></h2>
 
         <div>
             <div>
@@ -27,6 +28,7 @@ const tecnologies = () => {
                   <img id='linux' src="linux.png" alt="" />
                   <img src="ts.png" alt="" />
                 </div>
+                   <h2 className='border-bottom line2'></h2>
             </div>
         </div>
 
@@ -35,6 +37,7 @@ const tecnologies = () => {
           <img  src="down-arrow.png" alt="" />
           </a>
     </div>
+   
     </div>
   )
 }

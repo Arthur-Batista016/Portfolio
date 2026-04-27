@@ -8,6 +8,7 @@ import Projects from './components/projects'
 import Academic from './components/academic'
 import Header from './components/header';
 import Footer from './components/footer'
+import Conctact from './components/contactme'
 
 
 function App() {
@@ -149,10 +150,15 @@ useEffect(() => {
 
        <section id="proj">
         <Projects />
-        <Footer/>
+       
       </section>
 
-       
+
+      <section id="contact">
+      <Conctact/>
+      </section>
+
+    <Footer/>
        
 
 

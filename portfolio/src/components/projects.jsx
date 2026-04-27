@@ -70,7 +70,7 @@ const projects = () => {
               />
               <div class="card-body" id='mb'>
                 <h4>MAJOR BEAT</h4>
-                <p class="card-text">“My Final Project (TCC), Major Beat, is an app designed to help musicians find
+                <p class="card-text">“My Final Project (TCC) of my Technical course, Major Beat, is an app designed to help musicians find
                    new career opportunities and grow in the music industry.”</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
