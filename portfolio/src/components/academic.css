@@ -10,7 +10,14 @@
 }
 
 #background-academic:hover{
-    background-color:  #212529;
+   background: rgba(0, 0, 0, 0.4);
+   backdrop-filter: blur(10px);
+   border-radius: 30px;
+}
+
+#background-academic img {
+    background: rgba(255,255,255,0.9);
+    padding: 8px 18px;
 }
 
 #itens-academic{
@@ -19,17 +26,18 @@
 }
 
 #first-logo{
-    height: 100px !important;
-    width: auto;
+    height: 80px; /* mantém menor */
+    background: rgba(255,255,255,0.9);
+    padding: 80px 40px; /* ajusta a “borda” */
+    border-radius: 10px;
 }
 
 #second-logo{
-    height: 65px;
-    margin-top: 33px;
-    width: auto;
+    height: 100px; /* mantém menor */
+    background: rgba(255,255,255,0.9);
+    padding: 20px 40px; /* ajusta a “borda” */
+    border-radius: 10px;
 }
-
-
 
 #next-project{
     margin-top: 6%;
