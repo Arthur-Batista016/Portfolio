@@ -7,6 +7,7 @@ const Footer = () => {
       
       <div className="d-flex align-items-center">
         <img src="/mylogo.png" alt="" id='footer-logo' />
+        <h3>Desenvolvedor apaixonado por criar experiencias modernas, rápidas e intuitivas</h3>
       </div>
 
       <div id='social-medias'>
@@ -19,8 +20,13 @@ const Footer = () => {
             <img src="/linkedas.webp" alt="" />
           </li>
         </ul>
+
+        <div>
+          <h3>Feito com 💙 e muito código!</h3>
+        </div>
       </div>
 
+    
     </footer>
   )
 }

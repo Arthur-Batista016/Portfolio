@@ -11,3 +11,27 @@
 .images{
     height: 300px;
 }
+
+
+#next-talk{
+    transition: 0.4s;
+    background-color: transparent;
+    opacity: 15%;
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: -100px;
+}
+
+#next-talk img{
+    height: 100px;
+   display: block;
+    margin:  auto;
+    opacity: 60%;
+    background-color: transparent;
+    background-size: cover;
+}
+
+#next-talk:hover{
+   background-color: gray;
+}
+

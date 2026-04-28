@@ -134,6 +134,12 @@ const projects = () => {
 
         </div>
       </div>
+
+       <div id='next-talk' className='reveal'>
+      <a href="#proj">
+      <img  src="down-arrow.png" alt="" />
+      </a>
+    </div>
     </div>
   )
 }
