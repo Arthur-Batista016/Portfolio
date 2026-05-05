@@ -7,6 +7,7 @@
 
 .footer{
     background-color: #212529;
+    padding: 150%;
     
 }
 
@@ -17,6 +18,7 @@
 
 #social-medias ul {
   justify-content: flex-start !important;
+  margin-left: -70%;
 }
 
 #social-medias li {
@@ -68,6 +70,8 @@
 
   /* glow suave */
   text-shadow: 0 0 8px rgba(108, 140, 255, 0.6);
+   margin-left: -65%;
+   margin-bottom: 5%;
 }
 
 
@@ -76,21 +80,45 @@
 
 #footer-texts h5{
     display: grid;
-    width: 60%;
-    text-align: center;
+    width: 45%;
+    text-align: start;
     margin-top: -5%;
+    margin-left: 8%;
 }
 
 
 #line-footer{
-    margin-bottom: 100px;
+   margin-left:35%;
+   margin-top: -17%;
 
 }
+
+#line-footer img{
+  height: 300px;
+}
+
 
 #final-footer{
     margin-left: 70%;
 }
 
 #final-footer h3{
-    
+    color: #d3d3d3;
+     text-shadow: 0 0 8px rgba(108, 140, 255, 0.6);
+     font-family: monospace;
+     text-align: start;
+     font-size: 20px;
+     margin-left: -14% ;
+     margin-top: -6%;
+     width: 120%;
+     padding-bottom: 50%;
+}
+
+
+.footer-line {
+  border: none;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0;
+  opacity: 0.2; /* deixa mais elegante */
 }

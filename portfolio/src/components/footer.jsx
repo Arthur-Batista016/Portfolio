@@ -28,13 +28,19 @@ const Footer = () => {
         
       </div>
 
-      <div id='line-footer' className='border-bottom'>
-        <h1></h1>
+      <div id='line-footer'>
+        <img src="line-footer.png" alt="" />
       </div>
 
       <div id='final-footer'>
           <h3>Feito com 💙 e muito código!</h3>
         </div>
+
+
+      <div className='footer-line'>
+        <h1>.</h1>
+        </div>
+
     
     </footer>
   )
