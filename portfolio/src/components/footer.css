@@ -113,7 +113,7 @@
      text-align: start;
      font-size: 20px;
      margin-left: -14% ;
-     margin-top: 30%;
+     margin-top: 29%;
      width: 120%;
      padding-bottom: 50%;
 }
@@ -127,21 +127,27 @@
 }
 
 #footer-symbol{
-  margin-top: -26%;
-  margin-left: 46.5%;
+  margin-top: -27%;
+  margin-left: 46%;
   justify-content: center;
 }
 
 #footer-symbol img{
-  height: 60px;
+  height: 40px;
   justify-content: center;
 }
 
 #copyright h2{
-  text-align: start;
-  justify-content: start;
-  margin-left: -420%;
-  margin-top: -75%;
-  font-size: small;
+  margin-left: -221%;
+  margin-top: -50%;
+  font-size: smaller;
+
+
+
+   color: #d3d3d3;
+     text-shadow: 0 0 8px rgba(108, 140, 255, 0.6);
+     font-family: monospace;
+     text-align: start;
+     font-size: 20px;
 }
 
