@@ -37,11 +37,16 @@ const Footer = () => {
         </div>
 
 
-      <div className='footer-line'>
-        <h1>.</h1>
-        </div>
-
+    <div className="footer-line"></div>
     
+    <div id='footer-symbol'>
+      <img src="/footersymbol.png" alt="" />
+    </div>
+
+    <div id='copyright'>
+    <h2>@ 2026 ABB Todos os Direitos Reservados</h2>
+    </div>
+
     </footer>
   )
 }

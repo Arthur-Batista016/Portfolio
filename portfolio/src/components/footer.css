@@ -13,6 +13,7 @@
 
 #footer-logo{
     height: 200px;
+    margin-left: 10%;
 }
 
 
@@ -22,8 +23,8 @@
 }
 
 #social-medias li {
-  width: 75px;
-  height: 75px;
+  width: 120px;
+  height: 120px;
 
   display: flex;
   align-items: center;
@@ -54,8 +55,8 @@
 }
 
 #social-medias img{
-  width: 35px;
-  height: 35px;
+  width: 80px;
+  height: 80px;
 
   /* deixa os ícones brancos */
   filter: brightness(0) invert(1);
@@ -83,18 +84,21 @@
     width: 45%;
     text-align: start;
     margin-top: -5%;
-    margin-left: 8%;
+    margin-left: 15%;
 }
 
 
 #line-footer{
    margin-left:35%;
-   margin-top: -17%;
+   margin-top: -40%;
 
 }
 
 #line-footer img{
   height: 300px;
+  margin-top: 70%;
+  margin-bottom: -20%;
+  
 }
 
 
@@ -109,16 +113,35 @@
      text-align: start;
      font-size: 20px;
      margin-left: -14% ;
-     margin-top: -6%;
+     margin-top: 30%;
      width: 120%;
      padding-bottom: 50%;
 }
 
-
 .footer-line {
-  border: none;
+  width: 100%;
   height: 1px;
   background-color: white;
-  margin: 20px 0;
-  opacity: 0.2; /* deixa mais elegante */
+  opacity: 0.2;
+  margin-top:-32%;
 }
+
+#footer-symbol{
+  margin-top: -26%;
+  margin-left: 46.5%;
+  justify-content: center;
+}
+
+#footer-symbol img{
+  height: 60px;
+  justify-content: center;
+}
+
+#copyright h2{
+  text-align: start;
+  justify-content: start;
+  margin-left: -420%;
+  margin-top: -75%;
+  font-size: small;
+}
+
