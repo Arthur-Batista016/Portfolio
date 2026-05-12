@@ -19,7 +19,6 @@ const Contactme = () => {
 
       alert('Mensagem enviada com sucesso! 🚀')
 
-      // limpa formulário
       form.current.reset()
 
     })
@@ -33,99 +32,107 @@ const Contactme = () => {
   }
 
   return (
-    <div className="container d-flex justify-content-end" id='items-contact'>
+    <div className="container" id='items-contact'>
 
-      <div className="col-md-7 col-lg-8">
+      <div className="contact-content">
 
-        <h1 className="mb-3 reveal">
-          Vamos Conversar !
-        </h1>
+        <div className="contact-image reveal">
+          <img src="coding1.gif" alt="" />
+        </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <div className="contact-form">
 
-          <div className="row g-3">
+          <h1 className="mb-3 reveal">
+            Vamos Conversar !
+          </h1>
 
-            <div className="col-sm-6 reveal">
+          <form ref={form} onSubmit={sendEmail}>
 
-              <label className="form-label">
-                Nome
-              </label>
+            <div className="row g-3">
 
-              <input
-                type="text"
-                name="user_name"
-                className="form-control inputs"
-                required
-              />
+              <div className="col-sm-6 reveal">
+
+                <label className="form-label">
+                  Nome
+                </label>
+
+                <input
+                  type="text"
+                  name="user_name"
+                  className="form-control inputs"
+                  required
+                />
+
+              </div>
+
+              <div className="col-sm-6 reveal">
+
+                <label className="form-label">
+                  Telefone
+                </label>
+
+                <input
+                  type="tel"
+                  name="user_phone"
+                  className="form-control inputs"
+                  placeholder="Ex: (11) 99999-9999"
+                  required
+                />
+
+              </div>
+
+              <div className="col-12 reveal">
+
+                <label className="form-label">
+                  Email
+                </label>
+
+                <input
+                  type="email"
+                  name="user_email"
+                  className="form-control inputs"
+                  placeholder="Ex: you@example.com"
+                  required
+                />
+
+              </div>
+
+              <div className="col-12 reveal">
+
+                <label className="form-label">
+                  Mensagem
+                </label>
+
+                <textarea
+                  name="message"
+                  className="form-control inputs"
+                  id='mensagem'
+                  rows="1"
+                  onInput={(e) => {
+                    e.target.style.height = "auto";
+                    e.target.style.height = e.target.scrollHeight + "px";
+                  }}
+                  required
+                ></textarea>
+
+              </div>
+
+              <div className="col-12 reveal">
+
+                <button
+                  type="submit"
+                  className="w-100 btn btn-primary btn-lg"
+                >
+                  Enviar
+                </button>
+
+              </div>
 
             </div>
 
-            <div className="col-sm-6 reveal">
+          </form>
 
-              <label className="form-label">
-                Telefone
-              </label>
-
-              <input
-                type="tel"
-                name="user_phone"
-                className="form-control inputs"
-                placeholder="Ex: (11) 99999-9999"
-                required
-              />
-
-            </div>
-
-            <div className="col-12 reveal">
-
-              <label className="form-label">
-                Email
-              </label>
-
-              <input
-                type="email"
-                name="user_email"
-                className="form-control inputs"
-                placeholder="Ex: you@example.com"
-                required
-              />
-
-            </div>
-
-            <div className="col-12 reveal">
-
-              <label className="form-label">
-                Mensagem
-              </label>
-
-              <textarea
-                name="message"
-                className="form-control inputs"
-                id='mensagem'
-                rows="1"
-                onInput={(e) => {
-                  e.target.style.height = "auto";
-                  e.target.style.height = e.target.scrollHeight + "px";
-                }}
-                required
-              ></textarea>
-
-            </div>
-
-            <div className="col-12 reveal">
-
-              <button
-                type="submit"
-                className="w-100 btn btn-primary btn-lg"
-              >
-                Enviar
-              </button>
-
-            </div>
-
-          </div>
-
-        </form>
+        </div>
 
       </div>
 

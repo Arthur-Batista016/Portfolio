@@ -9,6 +9,7 @@ import Academic from './components/academic'
 import Header from './components/header';
 import Footer from './components/footer'
 import Conctact from './components/contactme'
+import Aboutme from './components/aboutme'
 
 
 function App() {
@@ -138,6 +139,10 @@ useEffect(() => {
 
       <section id="intro">
         <Intro liberarScroll={() => (liberarScroll.current = true)} />
+      </section>
+
+       <section id="aboutme">
+        <Aboutme />
       </section>
 
       <section id="tec">

@@ -29,7 +29,7 @@ const header = () => {
               <a href="#proj" className="nav-link px-2 text-secondary">Projetos</a>
             </li>
             <li className="nav-item item-btn">
-              <a href="#" className="nav-link px-2 text-secondary">Formação Academica</a>
+              <a href="#academic" className="nav-link px-2 text-secondary">Formação Academica</a>
             </li>
           </ul>
 
