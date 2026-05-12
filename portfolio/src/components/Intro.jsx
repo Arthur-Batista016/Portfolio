@@ -27,7 +27,7 @@ const Intro = ({ liberarScroll }) => {
       </div>
 
       <div className="col-md-6 text-center" id="profile">
-        <img src="/foto.png" alt="" />
+        <img src="./foto.png" alt="" />
       </div>
 
     </div>

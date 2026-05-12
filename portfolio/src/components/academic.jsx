@@ -10,7 +10,7 @@ const academic = () => {
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3"
             >
-             <img id='first-logo' src="/etec.png" alt="" className='reveal' />
+             <img id='first-logo' src="./etec.png" alt="" className='reveal' />
             </div>
             <h3 className='reveal'>Desenvolvimento de Sistemas</h3>
             <p className='reveal'>
@@ -25,7 +25,7 @@ const academic = () => {
             <div
               class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3"
             >
-             <img id='second-logo' src="/eniac.webp" alt="" className='reveal'/>
+             <img id='second-logo' src="./eniac.webp" alt="" className='reveal'/>
             </div>
             <h3 className='reveal'>Engenharia de Software</h3>
             <p className='reveal'>
