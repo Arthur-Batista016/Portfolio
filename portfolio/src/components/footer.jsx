@@ -23,7 +23,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/gitlogo.webp" alt="GitHub" />
+              <img src="gitlogo.webp" alt="GitHub" />
             </a>
           </li>
 
@@ -34,7 +34,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className='reveal' src="/linkedas.webp" alt="LinkedIn" />
+              <img className='reveal' src="./linkedas.webp" alt="LinkedIn" />
             </a>
           </li>
 
@@ -53,7 +53,7 @@ const Footer = () => {
       <div className="footer-line reveal"></div>
     
       <div id='footer-symbol' className='reveal'>
-        <img src="/footersymbol.png" alt="" />
+        <img src="footersymbol.png" alt="" />
       </div>
 
       <div id='copyright'>

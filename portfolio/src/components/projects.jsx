@@ -13,7 +13,7 @@ const projects = () => {
           <div className="col reveal">
             <div className="card shadow-sm">
               <img
-                src="/port-img.png"
+                src="port-img.png"
                 className="card-img-top images"
                 height="225"
                 style={{ objectFit: "cover" }}
@@ -48,7 +48,7 @@ const projects = () => {
           <div className="col reveal">
             <div className="card shadow-sm">
               <img
-                src="/db-dash.webp"
+                src="db-dash.webp"
                 className="card-img-top images"
                 height="225"
                 style={{ objectFit: "cover" }}
@@ -83,7 +83,7 @@ const projects = () => {
           <div className="col reveal">
             <div className="card shadow-sm">
               <img
-                src="/mb.png"
+                src="mb.png"
                 className="card-img-top images"
                 height="225"
                 style={{ objectFit: "cover" }}
@@ -118,7 +118,7 @@ const projects = () => {
             <div className="card shadow-sm">
               <img
                 id='greece'
-                src="/grecia-game.jpeg"
+                src="grecia-game.jpeg"
                 className="card-img-top images"
                 height="225"
                 style={{ objectFit: "cover" }}
@@ -152,7 +152,7 @@ const projects = () => {
           <div className="col reveal">
             <div className="card shadow-sm">
               <img
-                src="/ds.png"
+                src="ds.png"
                 className="card-img-top images"
                 height="225"
                 style={{ objectFit: "cover" }}

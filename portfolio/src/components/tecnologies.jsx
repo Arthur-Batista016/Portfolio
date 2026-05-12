@@ -12,9 +12,9 @@ const tecnologies = () => {
             <h1 id='top-langs' className='reveal'><b>MINHAS ESPECIALIDADES</b></h1>
             
             <div id='top-langs-img' className='reveal'>
-              <img id='java' src="/Java-Icon.png" alt="" />
-              <img id='react' src="/react-icon.png" alt="" />
-              <img id='Sql' src="/sql.png" alt="" />
+              <img id='java' src="Java-Icon.png" alt="" />
+              <img id='react' src="react-icon.png" alt="" />
+              <img id='Sql' src="sql.png" alt="" />
             </div>
             </div>
 
