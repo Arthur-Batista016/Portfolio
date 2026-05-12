@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer d-flex flex-wrap justify-content-between align-items-center py-3 px-4">
       
       <div className="align-items-start" id='footer-texts'>
-        <img src="/mylogo.png" alt="" id='footer-logo' />
+        <img src="mylogo.png" alt="" id='footer-logo' />
         <h5>Desenvolvedor apaixonado por criar experiencias modernas, rápidas e intuitivas</h5>
       </div>
 

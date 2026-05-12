@@ -11,7 +11,7 @@ const header = () => {
        
           {/* Centro (logo estilizado) */}
           <div className="d-flex justify-content-center">
-             <img className='logo' src="/mylogo.png" alt="" />
+             <img className='logo' src="mylogo.png" alt="" />
           </div>
 
           {/* Direita (menu) */}
