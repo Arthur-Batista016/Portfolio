@@ -117,7 +117,7 @@ const Contactme = () => {
 
               </div>
 
-              <div className="col-12 reveal">
+              <div className="col-12 reveal end">
 
                 <button
                   type="submit"

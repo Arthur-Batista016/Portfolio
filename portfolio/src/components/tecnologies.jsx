@@ -36,7 +36,7 @@ const tecnologies = () => {
           <a href="#proj">
           <img  src="down-arrow.png" alt="" />
           </a>
-    </div>
+        </div>
    
     </div>
   )

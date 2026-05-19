@@ -49,7 +49,12 @@ Atualmente atuo como Jovem Aprendiz de TI na Arius Sistemas, trabalhando com sup
       </div>
 
     </div>
-
+    
+       <div id='next-about' className='reveal'>
+         <a href="#tec">
+          <img src="down-arrow.png" alt="Próxima seção" />
+          </a>
+        </div>
   </div>
 
 </section>

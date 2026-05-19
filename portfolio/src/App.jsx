@@ -1,132 +1,132 @@
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import Intro from './components/Intro'
 import Tecnologies from './components/tecnologies'
 import Projects from './components/projects'
 import Academic from './components/academic'
-import Header from './components/header';
+import Header from './components/header'
 import Footer from './components/footer'
 import Conctact from './components/contactme'
 import Aboutme from './components/aboutme'
 
-
 function App() {
-  
-    useEffect(() => {
-    let isAnimating = false;
 
-      const smoothScrollTo = (targetY, duration =  5000) => {
-  const startY = window.scrollY;
-  const diff = targetY - startY;
-  let start;
+  // SCROLL ENTRE SECTIONS
+  useEffect(() => {
 
-  const ease = (t) => t < 0.5
-  ? 4 * t * t * t
-  : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
-
-  
-  const step = (timestamp) => {
-    if (!start) start = timestamp;
-    const time = timestamp - start;
-    const percent = Math.min(time / duration, 1);
-
-    window.scrollTo(0, startY + diff * ease(percent));
-
-    if (time < duration) {
-      requestAnimationFrame(step);
-    }
-  };
-
-  requestAnimationFrame(step);
-};
-
+    let isScrolling = false
+    let scrollCount = 0
 
     const handleScroll = (e) => {
-      if (isAnimating) return;
 
-      const section = document.elementFromPoint(
-        window.innerWidth / 2,
-        window.innerHeight / 2
-      )?.closest("section");
+      if (isScrolling) return
 
-      if (!section) return;
+      const sections = document.querySelectorAll("section")
 
-      const atTop = section.scrollTop === 0;
-      const atBottom =
-        section.scrollHeight - section.scrollTop <= section.clientHeight + 1;
+      let currentSection = 0
 
-      // ⬇️ Próxima section
-      if (e.deltaY > 0 && atBottom) {
-        const next = section.nextElementSibling;
-        if (next) {
-          isAnimating = true;
-          next.scrollIntoView({ behavior: "smooth" });
+      sections.forEach((section, index) => {
 
-          setTimeout(() => (isAnimating = false), 600);
+        const rect = section.getBoundingClientRect()
+
+        if (
+          rect.top <= window.innerHeight / 2 &&
+          rect.bottom >= window.innerHeight / 2
+        ) {
+          currentSection = index
+        }
+
+      })
+
+      // conta quantos scrolls o usuário deu
+      scrollCount++
+
+      // só muda de section depois de 3 scrolls
+      if (scrollCount < 3) return
+
+      // reseta contador
+      scrollCount = 0
+
+      // DESCER
+      if (e.deltaY > 0) {
+
+        const nextSection = sections[currentSection + 1]
+
+        if (nextSection) {
+
+          isScrolling = true
+
+          nextSection.scrollIntoView({
+            behavior: "smooth"
+          })
+
+          setTimeout(() => {
+            isScrolling = false
+          }, 800)
         }
       }
 
-      // ⬆️ Section anterior
-      if (e.deltaY < 0 && atTop) {
-        const prev = section.previousElementSibling;
-        if (prev) {
-          isAnimating = true;
-          prev.scrollIntoView({ behavior: "smooth" });
+      // SUBIR
+      if (e.deltaY < 0) {
 
-          setTimeout(() => (isAnimating = false), 600);
+        const prevSection = sections[currentSection - 1]
+
+        if (prevSection) {
+
+          isScrolling = true
+
+          prevSection.scrollIntoView({
+            behavior: "smooth"
+          })
+
+          setTimeout(() => {
+            isScrolling = false
+          }, 800)
         }
       }
-    };
+    }
 
-    window.addEventListener("wheel", handleScroll);
+    window.addEventListener("wheel", handleScroll)
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, []);
-
-
-
-
-
-
-
-
-
-useEffect(() => {
-  const elements = document.querySelectorAll(".reveal");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    },
-    {
-      threshold: 0.2, // quando 20% aparece
+      window.removeEventListener("wheel", handleScroll)
     }
-  );
 
-  elements.forEach((el) => observer.observe(el));
-
-  return () => observer.disconnect();
-}, []);
+  }, [])
 
 
 
 
 
+  // ANIMAÇÃO REVEAL
+  useEffect(() => {
 
+    const elements = document.querySelectorAll(".reveal")
 
+    const observer = new IntersectionObserver(
+      (entries) => {
 
+        entries.forEach((entry) => {
 
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active")
+          }
 
+        })
 
+      },
+      {
+        threshold: 0.2
+      }
+    )
+
+    elements.forEach((el) => observer.observe(el))
+
+    return () => observer.disconnect()
+
+  }, [])
 
 
 
@@ -134,14 +134,14 @@ useEffect(() => {
 
   return (
     <>
-     
-       <Header/>
+
+      <Header />
 
       <section id="intro">
-        <Intro liberarScroll={() => (liberarScroll.current = true)} />
+        <Intro />
       </section>
 
-       <section id="aboutme">
+      <section id="aboutme">
         <Aboutme />
       </section>
 
@@ -149,28 +149,20 @@ useEffect(() => {
         <Tecnologies />
       </section>
 
-<section id="academic">
+      <section id="academic">
         <Academic />
       </section>
 
-       <section id="proj">
+      <section id="proj">
         <Projects />
-       
       </section>
-
 
       <section id="contact">
-      <Conctact/>
+        <Conctact />
+        <Footer />
       </section>
 
-    <Footer/>
-       
-
-
-  
-       
-
-
+      
 
     </>
   )
