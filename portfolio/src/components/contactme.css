@@ -20,11 +20,22 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .contact-image img{
     width: 100%;
-    max-width: 500px;
+    max-width: 650px;      /* aumenta o tamanho */
+    aspect-ratio: 1/1;     /* mantém círculo perfeito */
+    object-fit: cover;     /* preenche o círculo */
+    object-position: center top; /* mostra mais o fundo superior */
+    
+    border-radius: 50%;    /* círculo */
+    
+    margin-top: -50%;      /* sobe menos a imagem */
+    
+    border: 4px solid rgba(255,255,255,0.15);
+    box-shadow: 0 0 30px rgba(13,110,253,0.25);
 }
 
 .contact-form{

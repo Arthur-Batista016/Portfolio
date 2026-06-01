@@ -37,7 +37,7 @@ const Contactme = () => {
       <div className="contact-content">
 
         <div className="contact-image reveal">
-          <img src="coding1.gif" alt="" />
+          <img className='reveal' src="coding2.jpeg" alt="" />
         </div>
 
         <div className="contact-form">
